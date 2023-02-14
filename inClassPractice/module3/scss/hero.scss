@@ -1,0 +1,33 @@
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)) , url(../img/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+    display: flex;
+    position: relative;
+
+    .banner{
+        color: #fff;
+        font-size: 28px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+
+        position: absolute;
+        margin-top: 5rem;
+        height: 8vh;
+        width: 16vw;
+        background-color: #1a1c18;
+        clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
+    }
+
+    .callout{
+        color: #FFF;
+        margin: auto;
+        font-size: 4em;
+    }
+}

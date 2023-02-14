@@ -1,0 +1,30 @@
+.dispatch{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)) ,url(../img/topo-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 53vh;
+
+    .test{
+        text-align: center;
+        padding: 2rem;
+        text-transform: uppercase;
+    }
+
+    .dispatchContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .dispatchItem{
+            text-align: left;
+            padding: 1%;
+            word-wrap: normal;
+            height: auto;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

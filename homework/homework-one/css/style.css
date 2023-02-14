@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(232, 232, 232);
+  padding: 0 5vw 0 5vw;
+}
+.navigation .option {
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.1em;
+  transition: 200ms;
+  height: 100%;
+}
+.navigation .option a {
+  text-decoration: none;
+  color: rgb(10, 65, 11);
+}
+.navigation .option:hover {
+  background-color: rgb(170, 170, 170);
+}
+.navigation .option:active {
+  background-color: rgb(138, 138, 138);
+}
+.navigation .search {
+  margin: 2vh 2vw 2vh auto;
+  font-size: 1em;
+  width: 25ch;
+  height: 4vh;
+}
+
+.photoBanner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/img1.jpg);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photoBanner .info {
+  width: 30vw;
+  height: 35vh;
+  background-color: rgba(87, 87, 87, 0.8);
+  margin: 0 auto 0 8rem;
+  text-align: center;
+  padding: 2rem;
+  color: rgb(223, 223, 223);
+}
+.photoBanner .mainButton {
+  width: 10vw;
+  height: 5vh;
+  background-color: rgb(10, 65, 11);
+  border: none;
+  border-radius: 2rem;
+  color: rgb(223, 223, 223);
+}
+
+.photoBannerTwo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/img2.jpg);
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.photoBannerTwo .secondaryInfo {
+  width: 30vw;
+  height: 35vh;
+  background-color: rgba(87, 87, 87, 0.8);
+  margin: 0 8rem 0 auto;
+  text-align: center;
+  padding: 2rem;
+  color: rgb(223, 223, 223);
+}
+.photoBannerTwo .mainButton {
+  width: 10vw;
+  height: 5vh;
+  background-color: rgb(10, 65, 11);
+  border: none;
+  border-radius: 2rem;
+  color: rgb(223, 223, 223);
+}
+
+.header {
+  padding: 2vh 7vw 2vh 7vw;
+}
+.header .secondary-nav a {
+  text-decoration: none;
+  color: rgb(10, 65, 11);
+  margin: 0 2rem 2rem 0;
+}
+
+.main {
+  margin-top: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.main .programs {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 8rem;
+}
+.main .programs .program {
+  width: 25vw;
+  height: 35vh;
+  background-color: rgb(180, 180, 180);
+  margin-top: 2rem;
+  padding: 2rem;
+}
+.main .programs .mainButton {
+  width: 10vw;
+  height: 5vh;
+  background-color: rgb(10, 65, 11);
+  border: none;
+  border-radius: 2rem;
+  color: rgb(223, 223, 223);
+}
+
+.border {
+  border: 0.5px solid rgba(10, 65, 11, 0.4);
+  margin: auto;
+  margin-top: 4rem;
+  width: 75vw;
+}
+
+/*# sourceMappingURL=style.css.map */

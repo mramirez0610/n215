@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #1a1c18;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.site-wrapper {
+  max-width: 1480px;
+  min-height: 400px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.large {
+  height: 1000px;
+  background-color: aqua;
+}
+
+.announcement {
+  height: 6vh;
+  width: 100%;
+  background-color: #747f5a;
+  display: flex;
+  text-transform: uppercase;
+}
+.announcement .message {
+  margin: auto;
+}
+.announcement .message .join {
+  background-color: #a23d3b;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #747f5a;
+}
+.announcement .login {
+  align-self: center;
+  margin-right: 1rem;
+}
+.announcement .login .fa-user {
+  margin-left: 1rem;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(../img/img1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+  display: flex;
+  position: relative;
+}
+.hero .banner {
+  color: #fff;
+  font-size: 28px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  margin-top: 5rem;
+  height: 8vh;
+  width: 16vw;
+  background-color: #1a1c18;
+  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
+}
+.hero .callout {
+  color: #FFF;
+  margin: auto;
+  font-size: 4em;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+.navigation a {
+  text-decoration: none;
+  padding: 1.3em;
+  color: #cccbc9;
+}
+
+.dispatch {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/topo-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 53vh;
+}
+.dispatch .test {
+  text-align: center;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+.dispatch .dispatchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dispatch .dispatchContainer .dispatchItem {
+  text-align: left;
+  padding: 1%;
+  word-wrap: normal;
+  height: auto;
+}
+.dispatch .dispatchContainer .dispatchItem img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

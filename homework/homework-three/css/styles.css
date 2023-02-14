@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.site-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+header .nav-holder {
+  margin: 0 auto;
+  max-width: 980px;
+  height: 90px;
+  color: #FFF;
+  border-bottom: 2px solid #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .nav-holder .logo {
+  margin-right: auto;
+  border: 2px solid #FFF;
+  padding: 1rem;
+}
+header .nav-holder nav a {
+  color: #FFF;
+  text-decoration: none;
+  margin: 1rem;
+}
+header .callout {
+  max-width: 714px;
+  margin: 0 auto;
+  margin-top: 69.5px;
+  text-align: center;
+  color: #FFF;
+}
+header .callout .callout-button {
+  display: block;
+  margin: 48px auto 0px auto;
+  width: 121px;
+  height: 40px;
+  background-color: #79ADDC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+header .callout .callout-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.offer-section {
+  max-width: 818px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  margin: -43px auto 0 auto;
+}
+.offer-section .offer {
+  width: 236px;
+  height: 304px;
+  text-align: center;
+  background-color: green;
+  color: #FFF;
+}
+.offer-section .offer h1 {
+  margin-top: 37px;
+  font-size: 2.3em;
+  text-transform: uppercase;
+}
+.offer-section .offer a {
+  margin: 57px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #79ADDC;
+  border-radius: 20px;
+  width: 133px;
+  height: 40px;
+}
+.offer-section .israel {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/israel.png);
+}
+.offer-section .usa {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/usa.png);
+}
+.offer-section .australia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/australia.png);
+}
+.offer-section .cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-area {
+  max-width: 818px;
+  min-height: 304px;
+  margin: 50px auto 0 auto;
+}
+.form-area h1 {
+  margin-top: 40px;
+}
+.form-area a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+.form-area .form input {
+  height: 50px;
+  padding: 5px;
+  border: solid #79ADDC 2px;
+}
+.form-area .form .two-input {
+  margin-bottom: 20px;
+}
+.form-area .form .two-input .left {
+  min-width: 344px;
+}
+.form-area .form .two-input .right {
+  min-width: 470px;
+}
+.form-area .form .check-in {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.form-area .form .check-in input {
+  min-width: 698px;
+}
+.form-area .form .check-in .icon {
+  position: absolute;
+  font-size: 24px;
+  left: 95%;
+}
+.form-area .form .options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.form-area .form .options select {
+  height: 50px;
+  min-width: 103px;
+  padding: 5px;
+  border: solid #79ADDC 2px;
+}
+.form-area .form .message {
+  margin-bottom: 20px;
+}
+.form-area .form .message input {
+  min-width: 100%;
+  max-width: 90%;
+  height: 192px;
+}
+
+/*# sourceMappingURL=styles.css.map */

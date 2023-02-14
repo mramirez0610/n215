@@ -1,0 +1,35 @@
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 232, 232);
+    padding: 0 5vw 0 5vw;
+    
+    .option{
+        padding: 1rem 2rem 1rem 2rem;
+        font-size: 1.1em;
+        transition: 200ms;
+        height: 100%;
+
+        a{
+            text-decoration: none;
+            color: rgb(10, 65, 11);    
+        }
+        
+        &:hover{
+            background-color: rgb(170, 170, 170);
+        }
+
+        &:active{
+            background-color: rgb(138, 138, 138);;
+        }
+    }
+
+    .search{
+        margin: 2vh 2vw 2vh auto;
+        font-size: 1em;
+        width: 25ch;
+        height: 4vh;
+        //color: rgb(200, 200, 200);
+    }    
+}

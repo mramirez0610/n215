@@ -1,0 +1,27 @@
+.announcement{
+    height: 6vh;
+    width: 100%;
+    background-color: #747f5a;
+    display: flex;
+    text-transform: uppercase;
+
+    .message{
+        margin: auto;
+
+        .join{
+            background-color: #a23d3b;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            color: #747f5a;
+        }
+    }
+
+    .login{
+        align-self: center;
+        margin-right: 1rem;
+
+        .fa-user{
+            margin-left: 1rem;
+        }
+    }
+}
