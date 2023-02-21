@@ -1,0 +1,43 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    background-color: $site-blue;
+    color: $site-white;
+
+    .logo{
+        margin-left: 5%;
+        border: 2px solid $site-white;
+        padding: 1rem;
+    }
+
+    .socials{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 5%;
+        gap: 10px;
+        
+        .facebook{
+            background-image: url(../img/path6.png);
+            height: 22px;
+            width: 22px;
+        }
+
+        .twitter{
+            background-image: url(../img/path5.png);
+            height: 22px;
+            width: 22px;
+        }
+    }
+}
+
+@media (max-width: 860px){
+    .logo{
+        margin-left: 1em;
+        font-size: 12px;
+    }
+}

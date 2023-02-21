@@ -1,0 +1,85 @@
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $hero-height;
+
+    .nav-holder{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0 auto;
+        max-width: $site-nav-width;
+        height: $site-nav-height;
+        color: $site-white;
+        border-bottom: 2px solid $site-white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        .logo{
+            margin-right: auto;
+            border: 2px solid $site-white;
+            padding: 1rem;
+        }
+
+        nav{
+            a{
+                color: $site-white;
+                text-decoration: none;
+                margin: 1rem;
+            }
+        }
+    }
+
+    .callout{
+
+        h1{
+            font-size: 60px;
+            font-family: "Proxima Nova";
+        }
+        
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        max-width: 714px;
+        margin: 0 auto;
+        margin-top: 69.5px;
+        text-align: center;
+        color: $site-white;
+
+        .callout-button{
+            display: block;
+            margin: 48px auto 0px auto;
+            width: 121px;
+            height: 40px;
+            background-color: $site-blue;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            text-transform: uppercase;
+
+            a{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .nav-holder{
+        .logo{
+            margin-left: 1em;
+            font-size: 12px;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: -5px;
+        }
+    }
+}
