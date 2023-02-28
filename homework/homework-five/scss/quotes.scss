@@ -1,0 +1,70 @@
+.quote-container{
+    margin: 0 auto;
+    max-width: $site-nav-width;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    h2{
+        font-size: 40px;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    h2:after {
+        content: '';
+        display: block;
+        position: relative;
+        width: 25%;
+        border: 1.5px solid #898989;
+        margin-top: 8px; 
+    }
+
+    .quotes{
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+        margin-top: 37px;
+        margin-bottom: 179px;
+
+        .quote{
+            display: flex;
+            align-items: start;
+            justify-content: left;
+            max-width: 722px;
+            position: relative;
+
+            .excerpt{
+                max-width: 385px;
+                margin-left: 27px;
+                font-style: italic;
+            }
+
+            h3{
+                position: absolute;
+                right: 5%;
+                bottom: -10%;
+                color: $site-blue;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media (max-width: 860px){
+    .quote-container{
+        max-width: 95%;
+
+        .quotes{
+            justify-content: center;
+            align-items: center;
+
+            .quote{
+                flex-direction: column;
+
+                .excerpt{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

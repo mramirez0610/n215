@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(../fonts/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+.site-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 95px;
+}
+header .nav-holder {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0 auto;
+  max-width: 980px;
+  height: 90px;
+  color: #000;
+  border-bottom: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .nav-holder .logo {
+  margin-right: auto;
+  border: 2px solid #000;
+  padding: 1rem;
+}
+header .nav-holder nav a {
+  color: #000;
+  text-decoration: none;
+  margin: 1rem;
+}
+header .callout {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  max-width: 714px;
+  margin: 0 auto;
+  margin-top: 69.5px;
+  text-align: center;
+  color: #FFF;
+}
+header .callout h1 {
+  font-size: 60px;
+  font-family: "Proxima Nova";
+}
+header .callout .callout-button {
+  display: block;
+  margin: 48px auto 0px auto;
+  width: 121px;
+  height: 40px;
+  background-color: #79ADDC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+header .callout .callout-button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header .about {
+  margin: 0 auto;
+  max-width: 980px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header .about h1 {
+  margin-top: 90.5px;
+  font-size: 60px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+header .about h1:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 15%;
+  border: 1.5px solid #898989;
+  margin-top: 8px;
+}
+header .about p {
+  margin-top: 36.5px;
+}
+
+@media (max-width: 860px) {
+  .nav-holder .logo {
+    margin-left: 1em;
+    font-size: 12px;
+  }
+  .nav-holder nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: -5px;
+  }
+  .about {
+    width: 90%;
+  }
+}
+.offer-section {
+  max-width: 818px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  margin: -43px auto 0 auto;
+}
+.offer-section .offer {
+  font-family: "Proxima Nova";
+  width: 236px;
+  height: 304px;
+  text-align: center;
+  background-color: green;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.offer-section .offer h1 {
+  margin-top: 37px;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.offer-section .offer a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  margin: 20px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #79ADDC;
+  border-radius: 20px;
+  width: 133px;
+  height: 40px;
+}
+.offer-section .israel {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/israel.png);
+}
+.offer-section .usa {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/usa.png);
+}
+.offer-section .australia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/australia.png);
+}
+.offer-section .cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 860px) {
+  .offer-section {
+    flex-direction: column;
+  }
+  .offer-section .offer {
+    max-width: 50vw;
+    min-width: 80vw;
+    height: 40vh;
+  }
+}
+.form-area {
+  max-width: 818px;
+  min-height: 304px;
+  margin: 50px auto 0 auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.form-area h1 {
+  font-family: "Proxima Nova";
+  font-size: 60px;
+  margin-top: 40px;
+}
+.form-area a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+.form-area .form input {
+  height: 50px;
+  padding: 5px;
+  border: solid #79ADDC 2px;
+}
+.form-area .form .two-input {
+  margin-bottom: 20px;
+}
+.form-area .form .two-input .left {
+  min-width: 344px;
+}
+.form-area .form .two-input .right {
+  min-width: 470px;
+}
+.form-area .form .check-in {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.form-area .form .check-in input {
+  min-width: 698px;
+}
+.form-area .form .check-in .icon {
+  position: absolute;
+  font-size: 24px;
+  left: 95%;
+}
+.form-area .form .options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.form-area .form .options select {
+  height: 50px;
+  min-width: 103px;
+  padding: 5px;
+  border: solid #79ADDC 2px;
+}
+.form-area .form .message {
+  margin-bottom: 20px;
+}
+.form-area .form .message input {
+  min-width: 100%;
+  max-width: 90%;
+  height: 192px;
+}
+
+@media (max-width: 860px) {
+  .form-area h1 {
+    margin-left: 10vw;
+  }
+  .form-area a {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .form-area .form .two-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .form-area .form .two-input .left {
+    min-width: 90%;
+  }
+  .form-area .form .two-input .right {
+    min-width: 90%;
+  }
+  .form-area .form .check-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .form-area .form .check-in input {
+    min-width: 90%;
+  }
+  .form-area .form .check-in .icon {
+    bottom: 20%;
+    left: 85%;
+  }
+  .form-area .form .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    gap: 2rem;
+  }
+  .form-area .form .options .option {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 20%;
+  }
+  .form-area .form .options .option select {
+    text-align: center;
+    height: 50px;
+    border: solid #79ADDC 2px;
+    min-width: 90px;
+  }
+  .form-area .form .message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-area .form .message input {
+    min-width: 90%;
+  }
+}
+footer {
+  height: 100px;
+  background-color: #79ADDC;
+  color: #FFF;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+footer .footer-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  max-width: 980px;
+}
+footer .footer-container .logo {
+  border: 2px solid #FFF;
+  padding: 1rem;
+}
+footer .footer-container .socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+footer .footer-container .socials .facebook {
+  background-image: url(../img/path6.png);
+  height: 22px;
+  width: 22px;
+}
+footer .footer-container .socials .twitter {
+  background-image: url(../img/path5.png);
+  height: 22px;
+  width: 22px;
+}
+
+@media (max-width: 860px) {
+  footer .footer-container {
+    flex-wrap: wrap;
+  }
+  footer .footer-container .logo {
+    margin-left: 1em;
+    font-size: 12px;
+  }
+  footer .footer-container .socials {
+    margin-right: 1em;
+  }
+  footer .footer-container .copyright {
+    font-size: 12px;
+  }
+}
+@media (max-width: 402px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+  footer .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer-container .logo {
+    margin: 0;
+  }
+  footer .footer-container .socials {
+    margin: 0;
+  }
+}
+.quote-container {
+  margin: 0 auto;
+  max-width: 980px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.quote-container h2 {
+  font-size: 40px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.quote-container h2:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 25%;
+  border: 1.5px solid #898989;
+  margin-top: 8px;
+}
+.quote-container .quotes {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  margin-top: 37px;
+  margin-bottom: 179px;
+}
+.quote-container .quotes .quote {
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  max-width: 722px;
+  position: relative;
+}
+.quote-container .quotes .quote .excerpt {
+  max-width: 385px;
+  margin-left: 27px;
+  font-style: italic;
+}
+.quote-container .quotes .quote h3 {
+  position: absolute;
+  right: 5%;
+  bottom: -10%;
+  color: #79ADDC;
+  font-weight: 300;
+}
+
+@media (max-width: 860px) {
+  .quote-container {
+    max-width: 95%;
+  }
+  .quote-container .quotes {
+    justify-content: center;
+    align-items: center;
+  }
+  .quote-container .quotes .quote {
+    flex-direction: column;
+  }
+  .quote-container .quotes .quote .excerpt {
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
