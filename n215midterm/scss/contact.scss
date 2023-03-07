@@ -1,0 +1,50 @@
+.contactSection{
+    .contact{
+        background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/contact.jpg);
+    }
+    
+    .formArea{
+        padding-left: 79px;
+        font-family: "Arial";
+        
+        h1{
+            font-family: "ArialBold";
+            margin-top: -100px;
+            margin-bottom: 100px;
+        }
+
+        .inputs{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 620px;
+            margin-left: 170px;
+
+            input{
+                width: 350px;
+                height: 50px;
+                border: 2px solid $site-brown;
+                margin-bottom: 35px;
+            }
+        }
+
+        //i am so sick of looking at this button, this is how i'm turning it in
+        .button{
+            margin: 0 auto;
+
+            a{
+                text-decoration: none;
+                color: $site-white;
+                border: solid $site-brown;
+                background-color: $site-brown;
+                border-radius: 20px;
+                width: 100px;
+                height: 30px;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

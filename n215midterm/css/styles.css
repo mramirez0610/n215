@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../css/fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Arial;
+  src: url(../css/fonts/arial.ttf);
+}
+@font-face {
+  font-family: ArialBold;
+  src: url(../css/fonts/arialbd.ttf);
+}
+.nav-holder {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 98px;
+  background-color: #471F00;
+}
+.nav-holder span {
+  margin-right: auto;
+  margin-left: 31px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: "Lato";
+}
+.nav-holder span:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 110%;
+  border: 2px solid #FFFFFF;
+  margin-top: 8px;
+}
+.nav-holder nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-family: "Lato";
+  margin-right: 44px;
+}
+.nav-holder nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.hero {
+  height: calc(100% - 98px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split-hero {
+  height: calc(100% - 98px);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.split-hero .hero {
+  height: 100%;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/home.jpg);
+}
+.home .callout {
+  width: 699px;
+  color: #FFFFFF;
+  font-family: "Arial";
+  padding-top: 224px;
+  padding-left: 135px;
+}
+.home .callout h1 {
+  font-size: 50px;
+  margin-bottom: 32px;
+}
+.home .callout p {
+  font-size: 20px;
+}
+.home .callout span {
+  font-size: 20px;
+}
+.home .callout a {
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 2px solid white;
+  padding: 2px 40px;
+  font-size: 20px;
+}
+
+.aboutSection .about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/about.jpg);
+}
+.aboutSection .textArea {
+  padding-left: 74px;
+  padding-right: 74px;
+  font-family: "Arial";
+  margin-top: -160px;
+}
+.aboutSection .textArea h1 {
+  font-size: 30px;
+  font-family: "ArialBold";
+  margin-bottom: 69px;
+}
+.aboutSection .textArea p {
+  width: 620px;
+}
+
+.blogSection .blog {
+  background-color: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.blogSection .blog .img1 {
+  background-image: url(../images/blog1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 250px;
+  border: 2px solid #471F00;
+}
+.blogSection .blog .img2 {
+  background-image: url(../images/blog2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 250px;
+  border: 2px solid #471F00;
+}
+.blogSection .blog-posts {
+  padding-left: 54px;
+  padding-right: 54px;
+  font-family: "Arial";
+}
+.blogSection .blog-posts .post {
+  width: 620px;
+  margin-bottom: 70px;
+}
+.blogSection .blog-posts .post h1 {
+  font-family: "ArialBold";
+}
+
+.contactSection .contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/contact.jpg);
+}
+.contactSection .formArea {
+  padding-left: 79px;
+  font-family: "Arial";
+}
+.contactSection .formArea h1 {
+  font-family: "ArialBold";
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+.contactSection .formArea .inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 620px;
+  margin-left: 170px;
+}
+.contactSection .formArea .inputs input {
+  width: 350px;
+  height: 50px;
+  border: 2px solid #471F00;
+  margin-bottom: 35px;
+}
+.contactSection .formArea .button {
+  margin: 0 auto;
+}
+.contactSection .formArea .button a {
+  text-decoration: none;
+  color: #FFFFFF;
+  border: solid #471F00;
+  background-color: #471F00;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

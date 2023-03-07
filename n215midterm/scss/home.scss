@@ -1,0 +1,32 @@
+.home{
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/home.jpg);
+
+    .callout{
+        width: 699px;
+        color: $site-white;
+        font-family: "Arial";
+        padding-top: 224px;
+        padding-left: 135px;
+
+        h1{
+            font-size: 50px;
+            margin-bottom: 32px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        span{
+            font-size: 20px;
+        }
+
+        a{
+            text-decoration: none;
+            color: $site-white;
+            border: 2px solid white;
+            padding: 2px 40px;
+            font-size: 20px;
+        }
+    }
+}
