@@ -1,0 +1,86 @@
+footer{
+    height: 100px;
+    background-color: $site-blue;
+    color: $site-white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 100px;
+
+    .footer-container{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: $site-nav-height;
+        max-width: $site-nav-width;
+        
+        .logo{
+            border: 2px solid $site-white;
+            padding: 1rem;
+        }
+
+        .socials{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            
+            .facebook{
+                background-image: url(../img/path6.png);
+                height: 22px;
+                width: 22px;
+            }
+
+            .twitter{
+                background-image: url(../img/path5.png);
+                height: 22px;
+                width: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 860px){
+    footer{
+        
+        .footer-container{
+            flex-wrap: wrap;
+            .logo{
+                margin-left: 1em;
+                font-size: 12px;
+            }
+        
+            .socials{
+                margin-right: 1em;
+            }
+        
+            .copyright{
+                font-size: 12px;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 402px){
+    footer{        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        
+        .footer-container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .logo{
+                margin: 0;
+            }
+    
+            .socials{
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+main{
+    .contact{
+
+        h1{
+            font-size: 40px;
+            margin-top: 55px;
+        }
+
+        h1:after {
+            content: '';
+            display: block;
+            position: relative;
+            width: 10%;
+            border: 1.5px solid #898989;
+            margin-top: 8px; 
+        }
+
+        margin: 0 auto;
+        max-width: $site-nav-width;
+        font-family: 'Proxima Nova';
+
+        .contactPage{
+            display: flex;
+            justify-content: space-between;
+
+            .left{
+
+                img{
+                    width: 400px;
+                }
+                .contactInfo{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-evenly;
+                    margin-top: 34px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+            }
+
+            .right{
+                width: 529px;
+
+                .form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-evenly;
+                    gap: 21px;
+                    
+                    input{
+                        width: 100%;
+                        height: 60px;
+                        background-color: #F5F5F5;
+                        border: none;
+                    }
+
+                    .message{
+                        min-width: 100%;
+                        max-width: 90%;
+                        height: 198px;
+                    }
+
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        
+                        height: 60px;
+                        width: 167px;
+                        
+                        background-color: $site-blue;
+
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: $site-white;
+                        margin-bottom: 20px;
+                    }
+                }
+                
+            }
+        } 
+    }
+}
+
+@media (max-width: 860px) {
+    .contactPage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        margin: 0 auto;
+        width: 0;
+    }
+}

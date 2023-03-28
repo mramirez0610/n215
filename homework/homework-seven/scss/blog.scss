@@ -1,0 +1,95 @@
+main{
+    .blog{
+        margin: 0 auto;
+        max-width: $site-nav-width;
+        font-family: 'Proxima Nova';
+        margin-top: 50px;
+        
+        h1{
+            font-size: 40px;
+        }
+
+        h1:after {
+            content: '';
+            display: block;
+            position: relative;
+            width: 5%;
+            border: 1.5px solid #898989;
+            margin-top: 8px; 
+        }
+
+        .blogPost{
+            display: flex;
+            align-items: start;
+            margin-top: 40px;
+            
+            h1{
+                font-size: 40px;
+            }
+
+            .date{
+                height: 60px;
+                min-width: 60px;
+                background-color: $site-blue;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                color: $site-white;
+                margin-right: 20px;
+
+                .num{
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+            }
+
+            .post{
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                justify-content: flex-start;
+                
+                text-align: left;
+
+                img{
+                    margin-bottom: 20px;
+                }
+
+                p{
+                    max-width: 380px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+                .secondary{
+                    color: $site-blue;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .blog{
+        h1{
+            margin-left: 10px;
+        }
+        .blogPost{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            
+            .date{
+                margin-left: 10px;
+            }
+            .post{
+                margin-left: 10px;
+                margin-right: 10px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
