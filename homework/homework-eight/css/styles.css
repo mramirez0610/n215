@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50px;
+  background-color: #494949;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.content .photos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 20px 0;
+}
+.content .photos .photo {
+  height: 300px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 860px) {
+  .photos {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.home .homeHero {
+  background-image: url(../img/home/home.jpeg);
+}
+.home .home1 {
+  background-image: url(../img/home/home1.jpeg);
+}
+.home .home2 {
+  background-image: url(../img/home/home2.jpeg);
+}
+.home .home3 {
+  background-image: url(../img/home/home3.jpeg);
+}
+
+.about .aboutHero {
+  background-image: url(../img/about/about.jpeg);
+}
+.about .about1 {
+  background-image: url(../img/about/about1.jpeg);
+}
+.about .about2 {
+  background-image: url(../img/about/about2.jpeg);
+}
+.about .about3 {
+  background-image: url(../img/about/about3.jpeg);
+}
+
+.contact .contactHero {
+  background-image: url(../img/contact/contact.jpeg);
+}
+.contact .contact1 {
+  background-image: url(../img/contact/contact1.jpeg);
+}
+.contact .contact2 {
+  background-image: url(../img/contact/contact2.jpeg);
+}
+.contact .contact3 {
+  background-image: url(../img/contact/contact3.jpeg);
+}
+
+.faq .faqHero {
+  background-image: url(../img/faq/faq.jpeg);
+}
+.faq ul {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
