@@ -1,0 +1,16 @@
+#app{
+    width: $site-width;
+    margin: 40px auto;
+}
+
+.banner{
+    width: 100%;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    margin-top: 40px;
+}
