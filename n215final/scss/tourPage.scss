@@ -1,0 +1,66 @@
+main{
+    .previews{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 42px;
+        
+        margin-top: 40px;
+    }
+
+    .dayList{
+        max-width: $site-nav-width;
+        margin: 0 auto;
+        margin-top: 19px;
+
+        .dayPlan{
+            h1{
+                font-family: "Proxima Nova";
+                font-size: 60px;
+            }
+
+            h1:after {
+                content: '';
+                display: block;
+                position: relative;
+                width: 10%;
+                border: 1.5px solid #898989;
+                margin-top: 8px; 
+            }
+
+            p{
+                margin-top: 38px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        }
+
+        a{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: uppercase;
+            margin: 80px auto 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: $site-white;
+
+            background-color: $site-blue;
+            border-radius: 20px;
+            width: 133px;
+            height: 40px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .previews{
+        flex-direction: column;
+
+        
+    } 
+
+    .dayPlan{
+        width: 90%;
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,84 @@
+main{
+    .specialOffers{
+        margin: 0 auto;
+        max-width: $site-nav-width;
+        font-family: 'Proxima Nova';
+        margin-top: 55px;
+
+        h1{
+            font-size: 40px;
+        }
+
+        h1:after {
+            content: '';
+            display: block;
+            position: relative;
+            width: 20%;
+            border: 1.5px solid #898989;
+            margin-top: 8px; 
+        }
+
+        .spOffer{
+            display: flex;
+            align-items: start;
+            margin-top: 44px;
+
+            .info{
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items:start;
+
+                span{
+                    display: flex;
+                    align-items:center;
+
+                    h1:after {
+                        content: '';
+                        display: block;
+                        position: relative;
+                        width: 50%;
+                        border: 1.5px solid #898989;
+                        margin-top: 8px; 
+                    }
+
+                    h2{
+                        margin-left: 20px;
+                        color: #FF7D38;
+                    }
+                }
+
+                p{
+                    max-width: 290px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+                a{
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: $site-white;
+                    
+
+                    background-color: $site-blue;
+                    border-radius: 20px;
+                    width: 133px;
+                    height: 40px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .spOffer{
+        img{
+            margin: 0 auto;
+        }
+        flex-direction: column;
+    }
+}

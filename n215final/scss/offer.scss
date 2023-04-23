@@ -1,0 +1,77 @@
+.offer-section{
+    max-width: 818px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    margin: -43px auto 0 auto;
+
+    .offer{
+        font-family: "Proxima Nova";
+        width: 236px;
+        height: 304px;
+        text-align: center;
+        background-color: green;
+        color: $site-white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+        h1{
+            margin-top: 37px;
+            font-size: 60px;
+            text-transform: uppercase;
+        }
+
+        a{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: uppercase;
+            margin: 20px auto 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: $site-white;
+            
+            background-color: $site-blue;
+            border-radius: 20px;
+            width: 133px;
+            height: 40px;
+        }
+    }
+
+    .israel{
+        background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/israel.png);
+    }
+
+    .usa{
+        background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/usa.png);
+    }
+
+    .australia{
+        background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/australia.png);
+    }
+
+    .cover{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+//media queries
+@media (max-width: 860px) {
+    .offer-section{
+        flex-direction: column;
+
+        .offer{
+            max-width: 50vw;
+            min-width: 80vw;
+            height: 40vh;
+        } 
+    } 
+}
