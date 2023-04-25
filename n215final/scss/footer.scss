@@ -14,7 +14,6 @@ footer{
         max-width: $site-nav-width;
         
         .logo{
-            border: 2px solid $site-white;
             padding: 1rem;
         }
 
@@ -41,12 +40,15 @@ footer{
 
 @media (max-width: 860px){
     footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         
         .footerContainer{
             flex-wrap: wrap;
             .logo{
                 margin-left: 1em;
-                font-size: 12px;
+                
             }
         
             .socials{
@@ -67,15 +69,18 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 150px;
+        
         
         .footerContainer{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 200px;
+            margin-bottom: 20px;
     
             .logo{
                 margin: 0;
+                width: 50%;
             }
     
             .socials{
