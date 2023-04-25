@@ -23,7 +23,7 @@ p {
   src: url(../fonts/fonts/ProximaNovaScOsfExtraCondensed.ttf);
 }
 .site-wrapper {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -33,6 +33,10 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
+}
+
+.homeBanner {
+  width: 100%;
 }
 
 .aboutBanner {
@@ -386,6 +390,7 @@ header .about p {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    gap: 20px;
   }
   .form-area .form .two-input .left {
     min-width: 90%;
@@ -487,6 +492,8 @@ footer .footerContainer .socials .twitter {
   }
   footer .footerContainer .copyright {
     font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 10px;
   }
 }
 @media (max-width: 402px) {
@@ -495,12 +502,14 @@ footer .footerContainer .socials .twitter {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    height: 120px;
   }
   footer .footerContainer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 100%;
     margin-bottom: 20px;
   }
   footer .footerContainer .logo {
@@ -627,6 +636,9 @@ footer .footerContainer .socials .twitter {
 .tour-section .zealand {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/zealand.png);
 }
+.tour-section .zealand h1 {
+  font-size: 3em;
+}
 .tour-section .france {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/france.png);
 }
@@ -656,6 +668,9 @@ footer .footerContainer .socials .twitter {
     max-width: 50vw;
     min-width: 80vw;
     height: 40vh;
+  }
+  .tour-section .zealand h1 {
+    font-size: 4em;
   }
 }
 main .previews {
@@ -812,13 +827,18 @@ main .blog .blogPost .date {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   color: #FFF;
   margin-right: 20px;
 }
 main .blog .blogPost .date .num {
   font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+main .blog .blogPost .date p {
   font-size: 20px;
+  margin-bottom: 0;
+  font-weight: bold;
 }
 main .blog .blogPost .post {
   display: flex;
@@ -953,7 +973,7 @@ main .contact .contactPage .right .form a {
   .contact {
     width: 100%;
   }
-  .form {
+  .right .form {
     margin: 0 auto;
     width: 90%;
   }
@@ -962,7 +982,7 @@ main .contact .contactPage .right .form a {
   .contact {
     width: 100%;
   }
-  .form {
+  .right .form {
     margin: 0 auto;
     width: 80%;
   }
@@ -971,7 +991,7 @@ main .contact .contactPage .right .form a {
   .contact {
     width: 100%;
   }
-  .form {
+  .right .form {
     margin: 0 auto;
     width: 60%;
   }

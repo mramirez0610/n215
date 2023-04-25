@@ -16,7 +16,7 @@ function changeRoute(){
         navHolder.removeClass("homeNav");
         navHolder.addClass("navHolder")
         callout.detach();
-        logo.attr("src", "/img/logo-black.svg")
+        logo.attr("src", "img/logo-black.svg")
     }  else {
         $.get(`pages/home.html`, function(content){
             $("#app").html(content);
@@ -30,7 +30,7 @@ function changeRoute(){
         navHolder.removeClass("navHolder")
         navHolder.addClass("homeNav")
         callout.appendTo("#indexBanner");
-        logo.attr("src", "/img/logo-white.svg")
+        logo.attr("src", "img/logo-white.svg")
     }
 };
 

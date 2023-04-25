@@ -119,9 +119,11 @@ main{
         width: 100%;
     }
 
-    .form{
-        margin: 0 auto;
-        width: 90%;
+    .right{
+        .form{
+            margin: 0 auto;
+            width: 90%;
+        }
     }
 }
 
@@ -131,9 +133,11 @@ main{
         width: 100%;
     }
 
-    .form{
-        margin: 0 auto;
-        width: 80%;
+    .right{
+        .form{
+            margin: 0 auto;
+            width: 80%;
+        }
     }
 }
 
@@ -143,8 +147,11 @@ main{
         width: 100%;
     }
 
-    .form{
-        margin: 0 auto;
-        width: 60%;
+    .right{
+        .form{
+            margin: 0 auto;
+            width: 60%;
+        }
     }
+    
 }

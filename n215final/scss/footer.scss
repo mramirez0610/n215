@@ -57,6 +57,8 @@ footer{
         
             .copyright{
                 font-size: 12px;
+                margin-bottom: 10px;
+                margin-right: 10px;
             }
         }
     }
@@ -69,13 +71,14 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+        gap: 20px;
+        height: 120px;
         
         .footerContainer{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 200px;
+            height: 100%;
             margin-bottom: 20px;
     
             .logo{
